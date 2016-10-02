@@ -1,13 +1,13 @@
 Package.describe({
-  name: "aldeed:schema-deny",
+  name: "antoniopresto:schema-deny",
   summary: "Deny inserting or updating certain properties through schema options",
   version: "1.1.0",
-  git: "https://github.com/aldeed/meteor-schema-deny.git"
+  git: "https://github.com/smartdemocracy/meteor-schema-deny.git"
 });
 
 Package.onUse(function(api) {
   api.use([
-    'aldeed:collection2-core@1.0.0',
+    'antoniopresto:collection2-core@1.2.0',
     'underscore@1.0.0',
     'minimongo@1.0.0',
     'check@1.0.0',
@@ -20,12 +20,12 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use([
-    'aldeed:schema-deny',
+    'antoniopresto:schema-deny',
     'tinytest@1.0.0',
     'underscore@1.0.0',
     'random@1.0.0',
     'mongo@1.0.0',
-    'aldeed:simple-schema',
+    'antoniopresto:simple-schema',
   ]);
 
   api.addFiles([
